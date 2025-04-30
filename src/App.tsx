@@ -7,10 +7,15 @@ import BatteryRecycling from './pages/BatteryRecycling';
 import VideoPage from './pages/VideoPage';
 import Quiz from './pages/Quiz';
 import Footer from './components/layout/Footer';
+import ScrollReset from './components/ScrollReset';
+
 
 function App() {
   return (
     <Router>
+      {/* 👇 Force page to top on route change, no scroll animation */}
+      <ScrollReset />
+
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
           <Routes>
@@ -21,7 +26,7 @@ function App() {
             <Route path="/video" element={<VideoPage />} />
             <Route path="/quiz" element={<Quiz />} />
 
-            {/* Redirect example */}
+            {/* Optional redirect example */}
             <Route path="/start" element={<Navigate to="/battery" replace />} />
 
             {/* 404 fallback */}
@@ -42,4 +47,3 @@ function App() {
 }
 
 export default App;
-
