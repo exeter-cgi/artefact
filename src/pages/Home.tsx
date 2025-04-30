@@ -153,10 +153,14 @@ const Home: React.FC = () => {
             </div>
 
             {/* Button stays last */}
-            <Button to="/assumptions">
-              Learn More
-              <ArrowRight size={16} className="ml-2" />
-            </Button>
+            <button
+  onClick={() => navigate('/assumptions')}
+  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+>
+  Learn More
+  <ArrowRight size={16} className="ml-2" />
+</button>
+
           </div>
 
           {/* RIGHT COLUMN — Key Findings visible only on desktop */}
@@ -234,10 +238,14 @@ alt="Battery Recycling Process"
                 cobalt, and nickel compared to building combustion engines.
               </p>
             </div>
-            <Button to="/research">
-              Explore Details
-              <ArrowRight size={16} className="ml-2" />
-            </Button>
+            <button
+  onClick={() => navigate('/research')}
+  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+>
+  Explore Details
+  <ArrowRight size={16} className="ml-2" />
+</button>
+
           </div>
 
           {/* Life-Cycle Comparison */}
@@ -258,10 +266,14 @@ alt="Battery Recycling Process"
                 highlighting when EVs become environmentally beneficial.
               </p>
             </div>
-            <Button to="/data">
-              Explore Details
-              <ArrowRight size={16} className="ml-2" />
-            </Button>
+            <button
+  onClick={() => navigate('/data')}
+  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+>
+  Explore Details
+  <ArrowRight size={16} className="ml-2" />
+</button>
+
           </div>
 
           {/* Battery Recycling */}
@@ -440,10 +452,14 @@ alt="Battery Recycling Process"
             </div>
 
             {/* Button always at the bottom */}
-            <Button to="/video">
-              View Full Analysis
-              <ArrowRight size={16} className="ml-2" />
-            </Button>
+            <button
+  onClick={() => navigate('/video')}
+  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+>
+  View Full Analysis
+  <ArrowRight size={16} className="ml-2" />
+</button>
+
           </div>
 
           {/* RIGHT COLUMN: Desktop-only Summary of Findings box */}
@@ -497,10 +513,14 @@ alt="Battery Recycling Process"
             center
           />
           <div className="max-w-2xl mx-auto">
-            <Button to="/quiz" size="lg">
-              Start Quiz
-              <ArrowRight size={16} className="ml-2" />
-            </Button>
+          <button
+  onClick={() => navigate('/quiz')}
+  className="inline-flex items-center justify-center px-6 py-3 text-lg bg-blue-500 text-white font-semibold rounded hover:bg-blue-600"
+>
+  Start Quiz
+  <ArrowRight size={16} className="ml-2" />
+</button>
+
           </div>
         </div>
       </Section>
