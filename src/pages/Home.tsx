@@ -21,8 +21,10 @@ import {
   X,
   UserRoundSearch,
 } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
   const [showMore, setShowMore] = useState(false);
 
   return (
@@ -281,10 +283,13 @@ alt="Battery Recycling Process"
                 recycling.
               </p>
             </div>
-            <Button to="/battery">
-              Explore Details
-              <ArrowRight size={16} className="ml-2" />
-            </Button>
+            <button
+  onClick={() => navigate('/battery')}
+  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+>
+  Explore Details
+  <ArrowRight size={16} className="ml-2" />
+</button>
           </div>
         </div>
       </Section>

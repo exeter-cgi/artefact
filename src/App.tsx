@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
 import ResearchSummary from './pages/ResearchSummary';
@@ -10,7 +10,7 @@ import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <Router>
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
           <Routes>
@@ -21,7 +21,7 @@ function App() {
             <Route path="/video" element={<VideoPage />} />
             <Route path="/quiz" element={<Quiz />} />
 
-            {/* ✅ Redirect example */}
+            {/* Redirect example */}
             <Route path="/start" element={<Navigate to="/battery" replace />} />
 
             {/* 404 fallback */}
@@ -37,8 +37,9 @@ function App() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
 export default App;
+
