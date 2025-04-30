@@ -214,7 +214,7 @@ const BatteryRecycling: React.FC = () => {
                 </div>
               </div>
 
-              {/* Experiment 1: Chemical Stability */}
+              {/* Experiment */}
               <h3 className="text-xl font-semibold mb-4">Experiment Details</h3>
               <div className="space-y-4">
                 {/* Duration */}
@@ -231,7 +231,6 @@ const BatteryRecycling: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Sample Size */}
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
                     <Battery size={20} />
@@ -244,7 +243,6 @@ const BatteryRecycling: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Primary Contact */}
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
                     <UserRound size={20} />
@@ -255,13 +253,15 @@ const BatteryRecycling: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Team */}
+                {/* Sources */}
                 <div className="border-t border-gray-200 my-4 pt-4">
                   <h4 className="text-base font-medium mb-2">Reference List</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li>
                       <a
                         href="https://crsreports.congress.gov"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hover:underline hover:text-blue-600 text-gray-600"
                       >
                         Congressional Research Service (2020)
@@ -270,6 +270,8 @@ const BatteryRecycling: React.FC = () => {
                     <li>
                       <a
                         href="https://doi.org/10.1039/C4EE03029J"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hover:underline hover:text-blue-600 text-gray-600"
                       >
                         Dunn et al. (2015)
@@ -278,6 +280,8 @@ const BatteryRecycling: React.FC = () => {
                     <li>
                       <a
                         href="https://doi.org/10.1039/D1RA00017F"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hover:underline hover:text-blue-600 text-gray-600"
                       >
                         Yang et al. (2021)
@@ -312,7 +316,7 @@ const BatteryRecycling: React.FC = () => {
               className="aspect-video bg-gray-200 rounded-lg overflow-hidden"
             >
               <img
-                src={`public/photos/${src}`}
+                src={`${import.meta.env.BASE_URL}photos/${src}`}
                 alt={`Experiment Photo ${index + 1}`}
                 className="w-full h-full object-cover"
               />
