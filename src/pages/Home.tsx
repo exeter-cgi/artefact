@@ -21,7 +21,7 @@ import {
   X,
   UserRoundSearch,
 } from "lucide-react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -29,7 +29,6 @@ const Home: React.FC = () => {
 
   return (
     <PageLayout>
-      {/* Landing Section */}
       <HeroBanner />
 
       {/* Environmental Concern Steps Section */}
@@ -43,7 +42,6 @@ const Home: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Step 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold">
               1
@@ -57,7 +55,6 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          {/* Step 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold">
               2
@@ -72,7 +69,6 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          {/* Step 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold">
               3
@@ -93,7 +89,6 @@ const Home: React.FC = () => {
       {/* Public Perception vs Reality Section */}
       <Section id="perception" background="white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-          {/* LEFT COLUMN — Text content + button + mobile-only Key Findings */}
           <div>
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600">
               <UserRoundSearch size={24} />
@@ -109,7 +104,6 @@ const Home: React.FC = () => {
               manufacturing, and battery disposal.
             </p>
 
-            {/* ✅ Key Findings inserted HERE for mobile only */}
             <div className="block md:hidden mb-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-4">Key Findings</h3>
@@ -152,23 +146,19 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Button stays last */}
             <button
-  onClick={() => navigate('/assumptions')}
-  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
->
-  Learn More
-  <ArrowRight size={16} className="ml-2" />
-</button>
-
+              onClick={() => navigate("/data")}
+              className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            >
+              Learn More
+              <ArrowRight size={16} className="ml-2" />
+            </button>
           </div>
 
-          {/* RIGHT COLUMN — Key Findings visible only on desktop */}
           <div className="hidden md:block">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4">Key Findings</h3>
               <ul className="space-y-4">
-                {/* same list as above */}
                 <li className="flex items-start">
                   <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
                     <ThumbsUp size={16} />
@@ -214,7 +204,7 @@ const Home: React.FC = () => {
         <div className="text-center mb-12">
           <SectionTitle
             title="Our Research Focus"
-            subtitle="Our research is divided into three key areas to better understand the true environmental footprint of electric cars compared to traditional vehicles."
+            subtitle="Our research is divided into three key areas to better understand the true environmental footprint of electric cars."
             center
           />
         </div>
@@ -224,8 +214,8 @@ const Home: React.FC = () => {
           <div className="flex flex-col h-full bg-white p-6 rounded-lg shadow-md text-center">
             <div className="mb-6 h-40 w-full rounded-lg overflow-hidden">
               <img
-src={`${import.meta.env.BASE_URL}photos/p0.jpg`}
-alt="Battery Recycling Process"
+                src={`${import.meta.env.BASE_URL}photos/p0.jpg`}
+                alt="Battery Recycling Process"
                 className="object-cover w-full h-full"
               />
             </div>
@@ -234,26 +224,24 @@ alt="Battery Recycling Process"
                 Battery Production Impact
               </h3>
               <p className="text-gray-600 mb-6">
-                We investigate the environmental costs of mining lithium,
-                cobalt, and nickel compared to building combustion engines.
+              We investigate the environmental costs of mining lithium, cobalt, and nickel, as well as the impact of battery production.  
               </p>
             </div>
             <button
-  onClick={() => navigate('/research')}
-  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
->
-  Explore Details
-  <ArrowRight size={16} className="ml-2" />
-</button>
-
+              onClick={() => navigate("/production")}
+              className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            >
+              Explore Details
+              <ArrowRight size={16} className="ml-2" />
+            </button>
           </div>
 
           {/* Life-Cycle Comparison */}
           <div className="flex flex-col h-full bg-white p-6 rounded-lg shadow-md text-center">
             <div className="mb-6 h-40 w-full rounded-lg overflow-hidden">
               <img
-src={`${import.meta.env.BASE_URL}photos/l0.jpg`}
-alt="Battery Recycling Process"
+                src={`${import.meta.env.BASE_URL}photos/l0.jpg`}
+                alt="Battery Recycling Process"
                 className="object-cover w-full h-full"
               />
             </div>
@@ -267,21 +255,20 @@ alt="Battery Recycling Process"
               </p>
             </div>
             <button
-  onClick={() => navigate('/data')}
-  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
->
-  Explore Details
-  <ArrowRight size={16} className="ml-2" />
-</button>
-
+              onClick={() => navigate("/data")}
+              className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            >
+              Explore Details
+              <ArrowRight size={16} className="ml-2" />
+            </button>
           </div>
 
           {/* Battery Recycling */}
           <div className="flex flex-col h-full bg-white p-6 rounded-lg shadow-md text-center">
             <div className="mb-6 h-40 w-full rounded-lg overflow-hidden">
               <img
-src={`${import.meta.env.BASE_URL}photos/e0.jpeg`}
-alt="Battery Recycling Process"
+                src={`${import.meta.env.BASE_URL}photos/e0.jpeg`}
+                alt="Battery Recycling Process"
                 className="object-cover w-full h-full"
               />
             </div>
@@ -296,12 +283,12 @@ alt="Battery Recycling Process"
               </p>
             </div>
             <button
-  onClick={() => navigate('/battery')}
-  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
->
-  Explore Details
-  <ArrowRight size={16} className="ml-2" />
-</button>
+              onClick={() => navigate("/recycling")}
+              className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            >
+              Explore Details
+              <ArrowRight size={16} className="ml-2" />
+            </button>
           </div>
         </div>
       </Section>
@@ -321,7 +308,7 @@ alt="Battery Recycling Process"
             <div className="w-full aspect-[9/16]">
               <iframe
                 className="w-full h-full object-cover rounded-t-lg"
-                src="https://www.youtube.com/embed/0oj1LYr9HAk"
+                src="https://www.youtube.com/embed/"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -453,13 +440,12 @@ alt="Battery Recycling Process"
 
             {/* Button always at the bottom */}
             <button
-  onClick={() => navigate('/video')}
-  className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
->
-  View Full Analysis
-  <ArrowRight size={16} className="ml-2" />
-</button>
-
+              onClick={() => navigate("/video")}
+              className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            >
+              View Full Analysis
+              <ArrowRight size={16} className="ml-2" />
+            </button>
           </div>
 
           {/* RIGHT COLUMN: Desktop-only Summary of Findings box */}
@@ -513,14 +499,13 @@ alt="Battery Recycling Process"
             center
           />
           <div className="max-w-2xl mx-auto">
-          <button
-  onClick={() => navigate('/quiz')}
-  className="inline-flex items-center justify-center px-6 py-3 text-lg bg-green-500 text-white font-semibold rounded hover:bg-green-600"
->
-  Start Quiz
-  <ArrowRight size={16} className="ml-2" />
-</button>
-
+            <button
+              onClick={() => navigate("/quiz")}
+              className="inline-flex items-center justify-center px-6 py-3 text-lg bg-green-500 text-white font-semibold rounded hover:bg-green-600"
+            >
+              Start Quiz
+              <ArrowRight size={16} className="ml-2" />
+            </button>
           </div>
         </div>
       </Section>
@@ -537,74 +522,101 @@ alt="Battery Recycling Process"
 
         {/* Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  {/* First 6 photos always visible */}
-  {[
-    {
-      src: "p0.jpg",
-      caption: "Planning our research approach",
-    },
-    {
-      src: "p0.jpg",
-      caption: "Interviewing participants about EV perceptions",
-    },
-    {
-      src: "p0.jpg",
-      caption: "Experimenting with battery recycling methods",
-    },
-    {
-      src: "p0.jpg",
-      caption: "Building and designing the website",
-    },
-    {
-      src: "p0.jpg",
-      caption: "Working together to review data",
-    },
-    {
-      src: "p0.jpg",
-      caption: "Filming vertical interviews for our website",
-    },
-  ].map((photo, index) => (
-    <div key={index} className="flex flex-col items-center">
-      <img
-        src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
-        alt={photo.caption}
-        className="rounded-lg shadow-md object-cover w-full h-64"
-      />
-      <p className="text-gray-600 mt-2 text-sm">{photo.caption}</p>
+          {/* First 6 photos always visible */}
+          {[
+            {
+              src: "p0.jpg",
+              caption: "Planning our research approach",
+            },
+            {
+              src: "p0.jpg",
+              caption: "Interviewing participants about EV perceptions",
+            },
+            {
+              src: "p0.jpg",
+              caption: "Experimenting with battery recycling methods",
+            },
+            {
+              src: "s4.jpg",
+              caption: "Building and designing the website",
+            },
+            {
+              src: "p0.jpg",
+              caption: "Working together to review data",
+            },
+            {
+              src: "s6.jpeg",
+              caption: "Designing a poster",
+            },
+          ].map((photo, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <img
+                src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
+                alt={photo.caption}
+                className="rounded-lg shadow-md object-cover w-full h-64"
+              />
+              <p className="text-gray-600 mt-2 text-sm">{photo.caption}</p>
+            </div>
+          ))}
+
+          {/* Additional photos shown if showMore is true */}
+          {showMore && [
+  {
+    src: "s7.jpeg",
+    caption: "Analysing survey results",
+  },
+  {
+    src: "s8.jpeg",
+    caption: "Working on a website",
+  },
+  {
+    src: "s9.jpg",
+    caption: "Interviewing participants about E-cars",
+  },
+  {
+    src: "s10.jpg",
+    caption: " Our Team is in the Fab Lab",
+  },
+].map((photo, index) => (
+  <div key={index + 6} className="flex flex-col items-center">
+    <img
+      src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
+      alt={photo.caption}
+      className="rounded-lg shadow-md object-cover w-full h-64"
+    />
+    <p className="text-gray-600 mt-2 text-sm">{photo.caption}</p>
+  </div>
+))}
+
+{showMore && (
+  <div className="flex flex-col items-center">
+    <div className="w-full h-64 rounded-lg shadow-md overflow-hidden">
+      <iframe
+        className="w-full h-full object-cover"
+        src="https://www.youtube.com/embed/WtmTGVEqVCo"
+        title="Battery Recycling Experiment"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </div>
-  ))}
+    <p className="text-gray-600 mt-2 text-sm">3D Printing Process</p>
+  </div>
+)}
 
-  {/* Additional photos shown if showMore is true */}
-  {showMore &&
-    [
-      {
-        src: "p0.jpg",
-        caption: "Analyzing survey results",
-      },
-      {
-        src: "p0.jpg",
-        caption: "Recording experiment results",
-      },
-      {
-        src: "p0.jpg",
-        caption: "Finalizing presentation materials",
-      },
-      {
-        src: "p0.jpg",
-        caption: "Celebrating project completion",
-      },
-    ].map((photo, index) => (
-      <div key={index + 6} className="flex flex-col items-center">
-        <img
-          src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
-          alt={photo.caption}
-          className="rounded-lg shadow-md object-cover w-full h-64"
-        />
-        <p className="text-gray-600 mt-2 text-sm">{photo.caption}</p>
-      </div>
-    ))}
-</div>
 
+{/* ✅ Final 12th photo */}
+{showMore && (
+  <div className="flex flex-col items-center">
+    <img
+      src={`${import.meta.env.BASE_URL}photos/p0.jpg`}
+      alt="Celebrating project completion"
+      className="rounded-lg shadow-md object-cover w-full h-64"
+    />
+    <p className="text-gray-600 mt-2 text-sm">Celebrating project completion</p>
+  </div>
+)}
+        </div>
 
         {/* Show More Button */}
         <div className="flex justify-center mt-8">
@@ -630,19 +642,19 @@ alt="Battery Recycling Process"
           {/* Member 1 */}
           <div className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
             <img
-src={`${import.meta.env.BASE_URL}team/p1.png`}
-alt="Member 1"
+              src={`${import.meta.env.BASE_URL}team/p1.png`}
+              alt="Member 1"
               className="rounded-lg w-full h-64 object-cover mb-4"
             />
             <h3 className="text-lg font-semibold">Kirill Tiukin</h3>
-            <p className="text-gray-500 text-sm">Research & Data Collection</p>
+            <p className="text-gray-500 text-sm">Website Design & Development</p>
           </div>
 
           {/* Member 2 */}
           <div className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
             <img
-src={`${import.meta.env.BASE_URL}team/p2.png`}
-alt="Member 2"
+              src={`${import.meta.env.BASE_URL}team/p2.png`}
+              alt="Member 2"
               className="rounded-lg w-full h-64 object-cover mb-4"
             />
             <h3 className="text-lg font-semibold">Laksh Lalwani</h3>
@@ -651,27 +663,25 @@ alt="Member 2"
 
           {/* Member 3 */}
           <div className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
-  <img
-    src={`${import.meta.env.BASE_URL}team/p3.png`}
-    alt="Member 3"
-    className="rounded-lg w-full h-64 object-cover mb-4"
-  />
-  <h3 className="text-lg font-semibold">Anastas Argutin</h3>
-  <p className="text-gray-500 text-sm">Website Design & Layout</p>
-</div>
-
+            <img
+              src={`${import.meta.env.BASE_URL}team/p3.png`}
+              alt="Member 3"
+              className="rounded-lg w-full h-64 object-cover mb-4"
+            />
+            <h3 className="text-lg font-semibold">Anastas Argutin</h3>
+            <p className="text-gray-500 text-sm">Recycling Experiment</p>
+          </div>
 
           {/* Member 4 */}
           <div className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
-  <img
-    src={`${import.meta.env.BASE_URL}team/p4.png`}
-    alt="Member 4"
-    className="rounded-lg w-full h-64 object-cover mb-4"
-  />
-  <h3 className="text-lg font-semibold">Hazem Bail</h3>
-  <p className="text-gray-500 text-sm">Research Analysis & Writing</p>
-</div>
-
+            <img
+              src={`${import.meta.env.BASE_URL}team/p4.png`}
+              alt="Member 4"
+              className="rounded-lg w-full h-64 object-cover mb-4"
+            />
+            <h3 className="text-lg font-semibold">Hazem Bail</h3>
+            <p className="text-gray-500 text-sm">Research Analysis & Writing</p>
+          </div>
         </div>
       </Section>
     </PageLayout>

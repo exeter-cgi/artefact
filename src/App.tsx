@@ -1,7 +1,7 @@
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
-import ResearchSummary from './pages/ResearchSummary';
+import BatteryProduction from './pages/BatteryProduction';
 import DataCollection from './pages/DataCollection';
 import BatteryRecycling from './pages/BatteryRecycling';
 import VideoPage from './pages/VideoPage';
@@ -20,9 +20,9 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/research" element={<ResearchSummary />} />
+            <Route path="/production" element={<BatteryProduction/>} />
             <Route path="/data" element={<DataCollection />} />
-            <Route path="/battery" element={<BatteryRecycling />} />
+            <Route path="/recycling" element={<BatteryRecycling />} />
             <Route path="/video" element={<VideoPage />} />
             <Route path="/quiz" element={<Quiz />} />
 

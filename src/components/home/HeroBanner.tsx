@@ -1,16 +1,16 @@
-import React from 'react';
-import { ChevronRight, Zap, Car } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { ChevronRight, Zap, Car } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HeroBanner: React.FC = () => {
   const navigate = useNavigate();
 
   const scrollToSection = (id: string) => {
-    navigate('/');
+    navigate("/");
     setTimeout(() => {
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }, 100);
   };
@@ -27,16 +27,21 @@ const HeroBanner: React.FC = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            The hidden environmental costs of: <span className="text-green-500">ELECTRIC</span> cars
+            The hidden environmental costs of:{" "}
+            <span className="text-green-500">ELECTRIC</span> cars
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-            While electric vehicles are often promoted as a sustainable solution to environmental challenges, it is worth questioning whether they are truly as eco-friendly as claimed, or if this image is a carefully constructed myth that overlooks hidden environmental costs.
+            While electric vehicles are often promoted as a sustainable solution
+            to environmental challenges, it is worth questioning whether they
+            are truly as eco-friendly as claimed, or if this image is a
+            carefully constructed myth that overlooks hidden environmental
+            costs.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <button
-              onClick={() => scrollToSection('perception')}
+              onClick={() => scrollToSection("perception")}
               className="inline-flex items-center justify-center px-6 py-3 text-lg bg-green-500 text-white font-semibold rounded hover:bg-green-600"
             >
               Explore Research
@@ -44,7 +49,7 @@ const HeroBanner: React.FC = () => {
             </button>
 
             <button
-              onClick={() => scrollToSection('quiz')}
+              onClick={() => scrollToSection("quiz")}
               className="inline-flex items-center justify-center px-6 py-3 text-lg border border-green-500 text-green-500 font-semibold rounded hover:bg-green-50"
             >
               Test Your Knowledge
