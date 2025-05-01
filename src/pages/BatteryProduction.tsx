@@ -41,6 +41,9 @@ const ResearchSummary: React.FC = () => {
                   manufacturing, especially lithium-ion batteries, are
                   significant and require closer examination.
                 </p>
+                <h3 className="text-xl font-semibold mt-4">
+                  Rising Demand and Resource Extraction
+                </h3>
                 <p>
                   The production of lithium-ion batteries has seen a substantial
                   rise due to the increasing demand for electric vehicles. In
@@ -70,6 +73,9 @@ const ResearchSummary: React.FC = () => {
               </div>
 
               <div className="prose prose-lg max-w-none space-y-6">
+              <h3 className="text-xl font-semibold mt-4">
+                  Environmental Footprint of Manufacturing
+                </h3>
                 <p>
                   The environmental footprint of battery production is therefore
                   a significant issue. Emissions from manufacturing contribute a
@@ -77,6 +83,9 @@ const ResearchSummary: React.FC = () => {
                   electric vehicles, challenging the narrative of their
                   environmental neutrality.
                 </p>
+                <h3 className="text-xl font-semibold mt-4">
+                  Conclusioin
+                </h3>
                 <p>
                   In conclusion, while battery technology is essential for a
                   greener future, it must be produced sustainably. Addressing

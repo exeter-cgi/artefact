@@ -224,7 +224,7 @@ const Home: React.FC = () => {
                 Battery Production Impact
               </h3>
               <p className="text-gray-600 mb-6">
-              We investigate the environmental costs of mining lithium, cobalt, and nickel, as well as the impact of battery production.  
+              This section investigates the environmental impact of mining lithium, cobalt, and nickel, along with the effects of battery production.
               </p>
             </div>
             <button
@@ -247,15 +247,14 @@ const Home: React.FC = () => {
             </div>
             <div className="flex-grow">
               <h3 className="text-xl font-semibold mb-2">
-                Life-Cycle Environmental Impact
+                Battery Lifespan in EVs
               </h3>
               <p className="text-gray-600 mb-6">
-                A full comparison from production to disposal for EVs and ICEs,
-                highlighting when EVs become environmentally beneficial.
+              This section explores and compares the lifespan and environmental impact of electric vehicle batteries and internal combustion engines.
               </p>
             </div>
             <button
-              onClick={() => navigate("/data")}
+              onClick={() => navigate("/lifespan")}
               className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
             >
               Explore Details
@@ -541,8 +540,8 @@ const Home: React.FC = () => {
               caption: "Building and designing the website",
             },
             {
-              src: "p0.jpg",
-              caption: "Working together to review data",
+              src: "s5.jpeg",
+              caption: "CGI Tutorial",
             },
             {
               src: "s6.jpeg",

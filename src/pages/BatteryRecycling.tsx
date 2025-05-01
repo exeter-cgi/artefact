@@ -127,7 +127,7 @@ const BatteryRecycling: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 sticky top-24">
               {/* Sources */}
-              <h3 className="text-xl font-semibold mb-4">Issue Details</h3>
+              <h3 className="text-xl font-semibold mb-4">Recycling and Disposal Summary</h3>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3">

@@ -1,9 +1,10 @@
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
-import BatteryProduction from './pages/BatteryProduction';
 import DataCollection from './pages/DataCollection';
+import BatteryProduction from './pages/BatteryProduction';
 import BatteryRecycling from './pages/BatteryRecycling';
+import BatteryLifespan from './pages/BatteryLifespan'
 import VideoPage from './pages/VideoPage';
 import Quiz from './pages/Quiz';
 import Footer from './components/layout/Footer';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/production" element={<BatteryProduction/>} />
             <Route path="/data" element={<DataCollection />} />
+            <Route path="/lifespan" element={<BatteryLifespan />} />
             <Route path="/recycling" element={<BatteryRecycling />} />
             <Route path="/video" element={<VideoPage />} />
             <Route path="/quiz" element={<Quiz />} />
