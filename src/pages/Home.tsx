@@ -308,7 +308,7 @@ const Home: React.FC = () => {
             <div className="w-full aspect-[9/16]">
               <iframe
                 className="w-full h-full object-cover rounded-t-lg"
-                src="https://www.youtube.com/embed/"
+                src="https://www.youtube.com/embed/UYAtv9JhUg0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
