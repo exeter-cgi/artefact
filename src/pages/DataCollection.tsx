@@ -22,11 +22,10 @@ const DataCollection: React.FC = () => {
       <div className="bg-gradient-to-r from-green-500 to-green-600 text-white">
         <div className="container mx-auto px-4 py-20 pt-32">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Data Collection
+          The Green Illusion
           </h1>
           <p className="text-xl opacity-90 max-w-2xl">
-            Exploring our methodology for gathering and analyzing environmental
-            impact data on EVs and ICEs.
+          Why People Think EVs Are Automatically 
           </p>
         </div>
       </div>
