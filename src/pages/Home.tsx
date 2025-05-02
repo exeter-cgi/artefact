@@ -535,8 +535,8 @@ const Home: React.FC = () => {
               caption: "Interviewing participants about EV perceptions",
             },
             {
-              src: "p0.jpg",
-              caption: "Experimenting with battery recycling methods",
+              src: "s3.jpeg",
+              caption: "Video Editing",
             },
             {
               src: "s4.jpg",

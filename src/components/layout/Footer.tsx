@@ -39,8 +39,8 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/full-analysis" className="hover:text-green-500">
-                Life-Cycle Environmental Impact
+                <Link to="/lifespan" className="hover:text-green-500">
+                Battery Lifespan in EVs
                 </Link>
               </li>
               <li>

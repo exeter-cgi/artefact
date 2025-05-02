@@ -7,8 +7,6 @@ import {
   Repeat,
   TrendingDown,
   Settings,
-  Wrench,
-  DollarSign,
   Globe,
   Factory,
   Hammer,
@@ -174,7 +172,7 @@ const ResearchSummary: React.FC = () => {
                   <div>
                     <h4 className="text-base font-medium">Cycle Life</h4>
                     <p className="text-sm text-gray-600">
-                      Typical batteries handle 1,000–1,500 full charge cycles.
+                      Typical batteries handle 1,500 full charge cycles.
                     </p>
                   </div>
                 </div>
@@ -201,32 +199,6 @@ const ResearchSummary: React.FC = () => {
                     <h4 className="text-base font-medium">Key Factors</h4>
                     <p className="text-sm text-gray-600">
                       Charging habits, heat, and depth of discharge matter.
-                    </p>
-                  </div>
-                </div>
-
-                {/* 5. Maintenance */}
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                    <Wrench size={20} />
-                  </div>
-                  <div>
-                    <h4 className="text-base font-medium">Maintenance</h4>
-                    <p className="text-sm text-gray-600">
-                      Fewer moving parts mean less frequent servicing.
-                    </p>
-                  </div>
-                </div>
-
-                {/* 6. Replacement */}
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                    <DollarSign size={20} />
-                  </div>
-                  <div>
-                    <h4 className="text-base font-medium">Replacement</h4>
-                    <p className="text-sm text-gray-600">
-                      Battery replacement is costly but infrequent.
                     </p>
                   </div>
                 </div>

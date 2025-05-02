@@ -44,6 +44,9 @@ const BatteryRecycling: React.FC = () => {
                   managing their end-of-life responsibly is critical to
                   minimizing environmental and industrial risks.
                 </p>
+                <h3 className="text-xl font-semibold mt-4">
+                Environmental and Safety Risks
+                  </h3>
                 <p>
                   Improper disposal of lithium-ion batteries poses major
                   environmental and safety hazards. If dumped in landfills, they
@@ -53,6 +56,9 @@ const BatteryRecycling: React.FC = () => {
                   or mishandled, raising serious concerns for both public health
                   and the environment.
                 </p>
+                <h3 className="text-xl font-semibold mt-4">
+                Benefits of Recycling
+                  </h3>
                 <p>
                   Recycling provides a sustainable solution. Through recycling,
                   valuable metals such as cobalt, lithium, nickel, and manganese
@@ -71,6 +77,9 @@ const BatteryRecycling: React.FC = () => {
                   uses chemical solutions to selectively leach valuable metals,
                   offering higher recovery rates and lower energy consumption.
                 </p>
+                <h3 className="text-xl font-semibold mt-4">
+                Technological Innovations
+                  </h3>
                 <p>
                   Exciting technological advancements are improving recycling
                   outcomes. Closed-loop recycling — where recovered materials
@@ -88,6 +97,9 @@ const BatteryRecycling: React.FC = () => {
                   up in general waste streams rather than specialized recycling
                   facilities.
                 </p>
+                <h3 className="text-xl font-semibold mt-4">
+                Moving Forward: Regulation and Responsibility
+                  </h3>
                 <p>
                   To tackle these challenges, stronger government regulations,
                   economic incentives, and public education efforts are urgently
