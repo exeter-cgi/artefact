@@ -33,7 +33,7 @@ const ResearchSummary: React.FC = () => {
 
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-2">
+          <div className="col-span-full lg:col-span-2">
             <SectionTitle title="Overview of the Problem" />
 
             <div className="prose prose-lg max-w-none">
@@ -147,7 +147,7 @@ const ResearchSummary: React.FC = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-1">
+          <div className="col-span-full lg:col-span-1">
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 sticky top-24">
               {/* Sources */}
               <h3 className="text-xl font-semibold mb-4">
