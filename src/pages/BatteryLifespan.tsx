@@ -11,8 +11,6 @@ import {
   DollarSign,
   Globe,
   Factory,
-  Zap,
-  BarChart2,
   Hammer,
   Leaf,
 } from "lucide-react";

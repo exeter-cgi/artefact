@@ -7,7 +7,6 @@ import BatteryRecycling from './pages/BatteryRecycling';
 import BatteryLifespan from './pages/BatteryLifespan'
 import VideoPage from './pages/VideoPage';
 import Quiz from './pages/Quiz';
-import Footer from './components/layout/Footer';
 import ScrollReset from './components/ScrollReset';
 
 
@@ -42,7 +41,6 @@ function App() {
             />
           </Routes>
         </main>
-        <Footer />
       </div>
     </Router>
   );

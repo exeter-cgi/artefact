@@ -4,6 +4,7 @@ import HeroBanner from "../components/home/HeroBanner";
 import Section from "../components/ui/Section";
 import SectionTitle from "../components/ui/SectionTitle";
 import Button from "../components/ui/Button";
+import Footer from "../components/layout/Footer";
 import {
   ArrowRight,
   Leaf,
@@ -28,6 +29,7 @@ const Home: React.FC = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
+    <>
     <PageLayout>
       <HeroBanner />
 
@@ -291,6 +293,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </Section>
+
       {/* Interviews Section */}
       <Section id="interviews" background="white">
         <div className="text-center mb-12">
@@ -627,6 +630,7 @@ const Home: React.FC = () => {
           )}
         </div>
       </Section>
+
       {/* Group Members Section */}
       <Section background="white">
         <div className="text-center mb-12">
@@ -684,6 +688,8 @@ const Home: React.FC = () => {
         </div>
       </Section>
     </PageLayout>
+    <Footer />
+  </>  
   );
 };
 
