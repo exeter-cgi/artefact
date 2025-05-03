@@ -99,8 +99,8 @@ const DataCollection: React.FC = () => {
                 </p>
               </div>
 
-              <div className="my-8 p-6 bg-green-50 rounded-lg border border-green-100">
-                <h4 className="text-xl font-semibold text-green-800 mb-2">
+              <div className="my-8 p-6 bg-blue-50 rounded-lg border border-blue-100">
+                <h4 className="text-xl font-semibold text-blue-800 mb-2">
                   Conclusion and Research Relevance
                 </h4>
                 <p className="text-gray-700 mb-0">
@@ -319,7 +319,7 @@ const DataCollection: React.FC = () => {
                   </li>
                 </ul>
                 <h3 className="text-xl font-semibold mt-4">
-                  Mixed Perceptions and Emotional Commitment
+                  Mixed Perceptions
                 </h3>
                 <p>
                   Open-ended responses revealed a split: while many defended EVs
@@ -462,34 +462,38 @@ const DataCollection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {[
             {
-              src: "d1.jpeg",
-              caption: "Belief in Eco-Friendliness Based on Visible Traits",
+              src: "d1.jpg",
+              caption: "Do you believe electric cars are environmentally friendly?",
             },
             {
-              src: "d2.jpeg",
-              caption: "Belief in Eco-Friendliness Based on Visible Traits",
+              src: "d2.jpg",
+              caption: "What makes you believe that electric cars are eco-friendly?",
             },
             {
-              src: "d3.jpeg",
+              src: "d3.jpg",
               caption:
-                "Sources of Information Shaped by Media and Social Influence",
+                "Where do you mostly hear or read about electric cars?",
             },
             {
-              src: "d4.jpeg",
+              src: "d4.jpg",
               caption:
-                "Sources of Information Shaped by Media and Social Influence",
+                "What sources most influenced your opinion about electric cars?",
             },
             {
-              src: "d5.jpeg",
-              caption: "Green choices",
+              src: "d5.jpg",
+              caption: "Do you agree with this statement: Driving an electric vehicle would make me feel like I'm helping the planet.",
             },
             {
-              src: "d7.jpeg",
-              caption: "Green choices",
+              src: "d6.jpg",
+              caption: "Have you ever felt like people expect you to make greener choices?",
             },
             {
-              src: "d8.jpeg",
-              caption: "Resistance to Changing Beliefs Despite New Information",
+              src: "d7.jpg",
+              caption: "If you learned that charging an EV with fossil-fuel electricity still pollutes, would that change your opinion of how eco-friendly they are?",
+            },
+            {
+              src: "d8.png",
+              caption: "Mixed Perceptions",
             },
           ].map((photo, index) => (
             <div key={index} className="flex flex-col items-center">
@@ -517,18 +521,18 @@ const DataCollection: React.FC = () => {
               alignment between what academic theory predicts and what people
               actually say and believe.
             </p>
-            <h3 className="text-xl font-semibold mt-4">1</h3>
+            <h3 className="text-xl font-semibold mt-4">First</h3>
             <p>
-              First, both sets of data confirm that the idea of eco-friendliness
+              Both sets of data confirm that the idea of eco-friendliness
               is based more on perception than full environmental understanding.
               In both academic literature and the survey results, the absence of
               exhaust fumes and media messaging drive the belief that EVs are
               “green.” This demonstrates that visible and emotional cues are
               more influential than technical lifecycle data.
             </p>
-            <h3 className="text-xl font-semibold mt-4">2</h3>
+            <h3 className="text-xl font-semibold mt-4">Second</h3>
             <p>
-              Second, both show that social and psychological factors play a
+              Both show that social and psychological factors play a
               major role. The survey responses show that people feel good about
               owning or supporting EVs because it aligns with their identity,
               values, and sense of responsibility, even if they know little
@@ -536,7 +540,7 @@ const DataCollection: React.FC = () => {
             </p>
             <h3 className="text-xl font-semibold mt-4">However</h3>
             <p>
-              However, the survey also introduced some important nuance that
+              The survey also introduced some important nuance that
               goes beyond what the literature predicted. While most people still
               assume EVs are eco-friendly, some participants challenged this
               belief directly, using words like “propaganda,” “greenwashing,” or
@@ -560,7 +564,7 @@ const DataCollection: React.FC = () => {
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 sticky top-24">
               <div className="w-full aspect-[4/5] rounded-lg overflow-hidden shadow-md">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/d10.png`} // Update this path to your image
+                  src={`${import.meta.env.BASE_URL}photos/d9.png`} // Update this path to your image
                   alt="Research Highlights Summary"
                   className="w-full h-full object-cover"
                 />
