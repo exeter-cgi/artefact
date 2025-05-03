@@ -577,8 +577,8 @@ const Home: React.FC = () => {
             {/* First 6 photos always visible */}
             {[
               {
-                src: "p0.jpg",
-                caption: "Planning our research approach",
+                src: "s0.jpg",
+                caption: "Working on a group portfolio",
               },
               {
                 src: "p0.jpg",

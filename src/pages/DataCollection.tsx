@@ -261,6 +261,50 @@ const DataCollection: React.FC = () => {
         </div>
       </Section>
 
+      <Section background="light">
+        <SectionTitle
+          title="Key Data Visualizations"
+          subtitle="Visual representation of our findings"
+          center
+        />
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {[
+            {
+              src: "dp1.jpg",
+              caption: "Analysis results (structural model)",
+            },
+            {
+              src: "dp2.jpg",
+              caption: "Theoretical framework",
+            },
+            {
+              src: "dp3.jpg",
+              caption:
+                "Research framework",
+            },
+            {
+              src: "dp4.png",
+              caption:
+                "Conceptual framework of social influence and BEV preferences",
+            },
+          ].map((photo, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="w-full aspect-[16/9] rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
+                  alt={photo.caption}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="text-gray-600 mt-2 text-sm text-center">
+                {photo.caption}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
