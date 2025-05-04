@@ -25,7 +25,7 @@ const DataCollection: React.FC = () => {
             The Green Illusion
           </h1>
           <p className="text-xl opacity-90 max-w-2xl">
-            Why People Think EVs Are Automatically
+            Why People Think EVs Are Automatically Eco-Friendly.
           </p>
         </div>
       </div>
@@ -207,7 +207,7 @@ const DataCollection: React.FC = () => {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li>
                     <a
-                      href="https://doi.org/10.1016/j.ecolecon.2013.08.007"
+                      href="https://doi.org/10.1016/j.ecolecon.2013.08.009"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline hover:text-blue-600 text-gray-600"

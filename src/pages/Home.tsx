@@ -617,7 +617,7 @@ const Home: React.FC = () => {
             </div>
             <SectionTitle
               title="Test Your Knowledge"
-              subtitle="Challenge yourself with our interactive quiz covering emissions, energy, and recycling!"
+              subtitle="Challenge yourself with our interactive quiz to see how much you’ve learned about the true environmental impact of electric vehicles!"
               center
             />
             <div className="max-w-2xl mx-auto">
@@ -652,7 +652,7 @@ const Home: React.FC = () => {
               },
               {
                 src: "s1.jpg",
-                caption: "Interviewing participants about EV perceptions",
+                caption: "Group Meeting",
               },
               {
                 src: "s3.jpeg",

@@ -13,7 +13,7 @@ const ResearchSummary: React.FC = () => {
             Analysis and Results:
           </h1>
           <p className="text-xl opacity-90 max-w-2xl">
-            What We Discovered Throughout the Project
+            What We Discovered Throughout the Project.
           </p>
         </div>
       </div>

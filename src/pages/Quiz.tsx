@@ -16,64 +16,100 @@ interface Question {
 const quizQuestions: Question[] = [
   {
     id: 1,
-    text: "Which vehicle type typically has lower lifetime carbon emissions when charged using renewable energy?",
+    text: "⁠What is the primary factor driving the belief in EVs' eco-friendliness?",
     options: [
-      "Electric Vehicles (EVs)",
-      "Internal Combustion Engine (ICE) vehicles",
-      "Both have approximately equal emissions",
-      "It depends entirely on the vehicle size"
+      "No exhaust fumes",
+      "Public perception and marketing",
+      "Lower lifetime carbon footprint",
+      " Battery production"
     ],
     correctAnswer: 0,
-    explanation: "EVs charged with renewable energy have significantly lower lifetime carbon emissions compared to ICE vehicles, as they produce zero tailpipe emissions and the electricity generation has minimal carbon impact."
+    explanation: "The absence of tailpipe emissions creates a visual and symbolic impression of clean transport, driving the belief that EVs are eco-friendly, even though other environmental factors are overlooked."
   },
   {
     id: 2,
-    text: "Which stage of an EV's lifecycle typically has the highest environmental impact?",
+    text: "What factor do most respondents ignore when considering EVs’ environmental impact?",
     options: [
-      "Daily operation/driving",
-      "Battery manufacturing",
-      "Vehicle disposal",
-      "Maintenance"
+      "Limited driving range compared to petrol cars",
+      "Battery production",
+      "Social status",
+      "Lack of charging infrastructure"
     ],
     correctAnswer: 1,
-    explanation: "Battery manufacturing is currently the most environmentally intensive part of an EV's lifecycle due to energy requirements and resource extraction for materials like lithium, cobalt, and nickel."
+    explanation: "Few respondents were aware of the ecological harm caused by battery production, which complicates the assumption that EVs are inherently eco-friendly."
   },
   {
     id: 3,
-    text: "What percentage of an ICE vehicle's energy is typically converted to power at the wheels?",
+    text: "Which metal is commonly associated with ethical concerns in mining?",
     options: [
-      "60-70%",
-      "40-50%",
-      "12-30%",
-      "80-90%"
+      "Iron",
+      "Zinc",
+      "Cobalt",
+      "Aluminium"
     ],
     correctAnswer: 2,
-    explanation: "ICE vehicles are relatively inefficient, converting only about 12-30% of the energy stored in gasoline to power at the wheels. The rest is lost as heat and friction."
+    explanation: "Cobalt is often mined in countries like the Democratic Republic of Congo under exploitative and unsafe conditions, including child labour. Its use raises serious human rights and environmental concerns."
   },
   {
     id: 4,
-    text: "Which of the following is NOT a common material used in EV batteries?",
+    text: "⁠What is a major environmental concern associated with lithium-ion battery production?",
     options: [
-      "Lithium",
-      "Cobalt",
-      "Platinum",
-      "Nickel"
+      "Air pollution",
+      "Carbon emissions",
+      "Noise pollution",
+      "Water pollution"
     ],
-    correctAnswer: 2,
-    explanation: "While lithium, cobalt, and nickel are common components in EV batteries, platinum is primarily used in catalytic converters for ICE vehicles, not in EV batteries."
+    correctAnswer: 3,
+    explanation: "The extraction of materials like lithium and cobalt has been linked to environmental degradation and water pollution, especially in regions like the Democratic Republic of Congo."
   },
   {
     id: 5,
-    text: "After how many miles (approximately) do EVs typically 'break even' with ICE vehicles in terms of total lifecycle emissions?",
+    text: "What is the estimated carbon emission per kilowatt-hour during the production of an EV battery?",
     options: [
-      "1,000-5,000 miles",
-      "6,000-16,000 miles",
-      "20,000-30,000 miles",
-      "50,000+ miles"
+      "100–150 kg of CO₂",
+      "150–200 kg of CO₂",
+      "200–250 kg of CO₂",
+      "250–300 kg of CO₂"
     ],
     correctAnswer: 1,
-    explanation: "Research shows that EVs typically reach a 'breakeven point' with ICE vehicles after 6,000 to 16,000 miles of driving, depending on the electricity grid mix and vehicle models compared."
-  }
+    explanation: "Producing a single EV battery can emit 150–200 kg of CO₂ per kilowatt-hour, contributing to the carbon footprint despite the reduction in tailpipe emissions from EVs."
+  },
+  {
+    id: 6,
+    text: "What is a key concern for consumers regarding EVs?",
+    options: [
+      "Charging speed",
+      "Vehicle weight",
+      "Battery lifespan",
+      "Maintenance cost"
+    ],
+    correctAnswer: 2,
+    explanation: "The lifespan of EV batteries is a major concern for consumers and manufacturers, as it directly impacts vehicle performance, cost, and environmental sustainability."
+  },
+  {
+    id: 7,
+    text: "How long do modern EV batteries typically last before significant capacity loss?",
+    options: [
+      "5–7 years",
+      "10–12 years",
+      "12-15 years",
+      "20–25 years"
+    ],
+    correctAnswer: 2,
+    explanation: "Most modern EV lithium-ion batteries are designed to last 12–15 years or 150,000–300,000 kilometers before experiencing significant capacity loss."
+  },
+  {
+    id: 8,
+    text: "What is a major environmental risk of improperly disposing lithium-ion batteries?",
+    options: [
+      "Air pollution",
+      "Soil and groundwater contamination",
+      "Water scarcity",
+      "Noise pollution"
+    ],
+    correctAnswer: 1,
+    explanation: "Improper disposal of lithium-ion batteries in landfills can lead to the leakage of toxic chemicals such as cobalt, nickel, and lithium, contaminating soil and groundwater."
+  },
 ];
 
 const Quiz: React.FC = () => {
@@ -135,7 +171,7 @@ const Quiz: React.FC = () => {
         <div className="container mx-auto px-4 py-20 pt-32">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Test Your Knowledge</h1>
           <p className="text-xl opacity-90 max-w-2xl">
-            Take our interactive quiz to test what you know about the environmental impact of EVs and ICEs.
+            Take our interactive quiz to test what you know about the environmental impact of EVs.
           </p>
         </div>
       </div>
