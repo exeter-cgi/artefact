@@ -733,7 +733,7 @@ const Home: React.FC = () => {
             {showMore && (
               <div className="flex flex-col items-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/p0.jpg`}
+                  src={`${import.meta.env.BASE_URL}photos/s/s11.jpg`}
                   alt="Celebrating project completion"
                   className="rounded-lg shadow-md object-cover w-full h-64"
                 />
