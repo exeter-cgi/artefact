@@ -57,7 +57,7 @@ const ResearchSummary: React.FC = () => {
                   kilometres before significant capacity loss occurs.
                 </p>
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/l1.jpg`}
+                  src={`${import.meta.env.BASE_URL}photos/l/l1.jpg`}
                   alt="EV Battery Lifespan Chart"
                   className="w-full h-full object-cover mt-4 rounded-lg shadow"
                 />
@@ -100,7 +100,7 @@ const ResearchSummary: React.FC = () => {
                   complex ICV powertrains.
                 </p>
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/l2.jpg`}
+                  src={`${import.meta.env.BASE_URL}photos/l/l2.jpg`}
                   alt="EV Battery Lifespan Chart"
                   className="w-full h-full object-cover mt-4 rounded-lg shadow"
                 />
@@ -131,13 +131,19 @@ const ResearchSummary: React.FC = () => {
 
               <div className="my-8 p-6 bg-green-50 rounded-lg border border-green-100">
                 <h4 className="text-xl font-semibold text-green-800 mb-2">
-                  Key Chellange
+                  Key Challenge
                 </h4>
                 <p className="text-gray-700 mb-0">
-                  The key challenge lies in aligning technological progress with
-                  consumer behaviour, infrastructure development, and recycling
-                  practices to ensure that EVs deliver on their promise of
-                  sustainable, long-lasting transportation solutions.
+                  The <strong>key challenge</strong> lies in aligning{" "}
+                  <strong>technological progress</strong> with{" "}
+                  <strong>consumer behaviour</strong>,{" "}
+                  <strong>infrastructure development</strong>, and{" "}
+                  <strong>recycling practices</strong> to ensure that EVs
+                  deliver on their promise of{" "}
+                  <strong>
+                    sustainable, long-lasting transportation solutions
+                  </strong>
+                  .
                 </p>
               </div>
             </div>
@@ -273,7 +279,7 @@ const ResearchSummary: React.FC = () => {
                       rel="noopener noreferrer"
                       className="hover:underline hover:text-blue-600 text-gray-600"
                     >
-                    Bloom et al. (2001)
+                      Bloom et al. (2001)
                     </a>
                   </li>
                   <li>
@@ -283,7 +289,7 @@ const ResearchSummary: React.FC = () => {
                       rel="noopener noreferrer"
                       className="hover:underline hover:text-blue-600 text-gray-600"
                     >
-                    Linden & Reddy (2002){" "}
+                      Linden & Reddy (2002){" "}
                     </a>
                   </li>
                   <li>
@@ -293,7 +299,7 @@ const ResearchSummary: React.FC = () => {
                       rel="noopener noreferrer"
                       className="hover:underline hover:text-blue-600 text-gray-600"
                     >
-                    Tarascon & Armand (2001){" "}
+                      Tarascon & Armand (2001){" "}
                     </a>
                   </li>
                   <li>
@@ -303,7 +309,7 @@ const ResearchSummary: React.FC = () => {
                       rel="noopener noreferrer"
                       className="hover:underline hover:text-blue-600 text-gray-600"
                     >
-                    Vetter et al. (2005){" "}
+                      Vetter et al. (2005){" "}
                     </a>
                   </li>
                   <li>
@@ -313,7 +319,7 @@ const ResearchSummary: React.FC = () => {
                       rel="noopener noreferrer"
                       className="hover:underline hover:text-blue-600 text-gray-600"
                     >
-                    Wang et al. (2014){" "}
+                      Wang et al. (2014){" "}
                     </a>
                   </li>
                 </ul>

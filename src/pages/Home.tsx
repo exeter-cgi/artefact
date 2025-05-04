@@ -10,18 +10,17 @@ import {
   Leaf,
   BarChart2,
   ThumbsUp,
-  FileText,
   Database,
   Recycle,
-  Video,
   BrainCircuit,
-  Battery,
-  Download,
-  Clock,
   Users,
-  X,
   UserRoundSearch,
+  Factory,
+  BookOpenCheck,
+  AlertTriangle,
+  BatteryCharging,
 } from "lucide-react";
+
 import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
@@ -258,7 +257,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col h-full bg-white p-6 rounded-lg shadow-md text-center">
               <div className="mb-6 h-40 w-full rounded-lg overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/p0.jpg`}
+                  src={`${import.meta.env.BASE_URL}photos/p/p0.jpg`}
                   alt="Battery Recycling Process"
                   className="object-cover w-full h-full"
                 />
@@ -286,7 +285,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col h-full bg-white p-6 rounded-lg shadow-md text-center">
               <div className="mb-6 h-40 w-full rounded-lg overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/l0.jpg`}
+                  src={`${import.meta.env.BASE_URL}photos/l/l0.jpg`}
                   alt="Battery Recycling Process"
                   className="object-cover w-full h-full"
                 />
@@ -314,7 +313,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col h-full bg-white p-6 rounded-lg shadow-md text-center">
               <div className="mb-6 h-40 w-full rounded-lg overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/e0.jpeg`}
+                  src={`${import.meta.env.BASE_URL}photos/e/e0.jpeg`}
                   alt="Battery Recycling Process"
                   className="object-cover w-full h-full"
                 />
@@ -436,17 +435,21 @@ const Home: React.FC = () => {
               </div>
               <SectionTitle
                 title="Analysis, Evaluation, and Results"
-                subtitle="Assessing the true environmental impact of electric vehicles based on research and real-world perspectives."
+                subtitle="We analysed both assumptions and real opinions to evaluate public knowledge and measure the impact of our educational outreach."
               />
               <p className="text-gray-600 mb-6">
-                While EVs offer important benefits during the operational phase,
-                our findings highlight significant hidden costs associated with
-                battery manufacturing and end-of-life disposal. Understanding
-                the full life cycle is essential to making truly sustainable
-                transportation choices.
+                This section examines how we identified the environmental
+                misconceptions surrounding electric vehicles, how public
+                perception was measured through surveys and interviews, and what
+                our project achieved in terms of engagement and awareness. By
+                combining academic research with real-world feedback, we
+                evaluated the gap between what people assume about EVs and the
+                actual environmental realities of battery production, use, and
+                disposal.
               </p>
 
               {/* ✅ Mobile-only: Summary inserted HERE */}
+
               <div className="block md:hidden mb-6">
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-semibold mb-4">
@@ -455,7 +458,7 @@ const Home: React.FC = () => {
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                        <Database size={16} />
+                        <Leaf size={16} />
                       </div>
                       <div>
                         <h4 className="font-medium">Positive Aspects</h4>
@@ -469,7 +472,7 @@ const Home: React.FC = () => {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                        <Clock size={16} />
+                        <Factory size={16} />
                       </div>
                       <div>
                         <h4 className="font-medium">
@@ -483,13 +486,52 @@ const Home: React.FC = () => {
                         </p>
                       </div>
                     </li>
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                        <BookOpenCheck size={16} />
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Knowledge Gaps</h4>
+                        <p className="text-sm text-gray-600">
+                          Many participants rely on social media and advertising
+                          for EV information, with limited awareness of battery
+                          sourcing, electricity generation, and recycling.
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                        <AlertTriangle size={16} />
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Public Misconceptions</h4>
+                        <p className="text-sm text-gray-600">
+                          The perception of EVs as entirely green persists, even
+                          though significant lifecycle emissions are often
+                          ignored.
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                        <BatteryCharging size={16} />
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Shift in Awareness</h4>
+                        <p className="text-sm text-gray-600">
+                          A smaller but growing number of people are starting to
+                          question the sustainability of EVs as more information
+                          becomes accessible.
+                        </p>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
 
               {/* Button always at the bottom */}
               <button
-                onClick={() => navigate("/video")}
+                onClick={() => navigate("/analysis")}
                 className="inline-flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
               >
                 View Full Analysis
@@ -506,30 +548,58 @@ const Home: React.FC = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                      <Database size={16} />
+                      <Leaf size={16} />
                     </div>
                     <div>
                       <h4 className="font-medium">Positive Aspects</h4>
                       <p className="text-sm text-gray-600">
                         Electric vehicles generate significantly fewer emissions
-                        during use and demonstrate superior energy efficiency
-                        compared to traditional combustion engine vehicles.
+                        during use and offer greater energy efficiency than
+                        traditional internal combustion vehicles.
                       </p>
                     </div>
                   </li>
+
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                      <Clock size={16} />
+                      <Factory size={16} />
                     </div>
                     <div>
                       <h4 className="font-medium">
                         Hidden Environmental Costs
                       </h4>
                       <p className="text-sm text-gray-600">
-                        The production and disposal of EV batteries lead to
-                        substantial emissions, extensive resource extraction,
-                        and complex recycling challenges that are often
-                        overlooked.
+                        Battery production and disposal involve high emissions,
+                        intensive material extraction, and difficult recycling
+                        processes — often overlooked in public discussion.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li className="flex items-start">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                      <BookOpenCheck size={16} />
+                    </div>
+                    <div>
+                      <h4 className="font-medium">Knowledge Gaps</h4>
+                      <p className="text-sm text-gray-600">
+                        Most people get their information from social media and
+                        ads, with limited understanding of electricity sources,
+                        battery lifecycles, and environmental trade-offs.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li className="flex items-start">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                      <AlertTriangle size={16} />
+                    </div>
+                    <div>
+                      <h4 className="font-medium">Public Misconceptions</h4>
+                      <p className="text-sm text-gray-600">
+                        The belief that EVs are inherently “green” persists,
+                        largely driven by emotional perception rather than
+                        complete environmental data.
                       </p>
                     </div>
                   </li>
@@ -581,7 +651,7 @@ const Home: React.FC = () => {
                 caption: "Working on a group portfolio",
               },
               {
-                src: "p0.jpg",
+                src: "s1.jpg",
                 caption: "Interviewing participants about EV perceptions",
               },
               {
@@ -603,7 +673,7 @@ const Home: React.FC = () => {
             ].map((photo, index) => (
               <div key={index} className="flex flex-col items-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
+                  src={`${import.meta.env.BASE_URL}photos/s/${photo.src}`}
                   alt={photo.caption}
                   className="rounded-lg shadow-md object-cover w-full h-64"
                 />
@@ -633,7 +703,7 @@ const Home: React.FC = () => {
               ].map((photo, index) => (
                 <div key={index + 6} className="flex flex-col items-center">
                   <img
-                    src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
+                    src={`${import.meta.env.BASE_URL}photos/s/${photo.src}`}
                     alt={photo.caption}
                     className="rounded-lg shadow-md object-cover w-full h-64"
                   />

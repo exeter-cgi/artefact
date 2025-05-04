@@ -64,13 +64,18 @@ const ResearchSummary: React.FC = () => {
                     Key Insight: Carbon Cost of Battery Production
                   </h4>
                   <p className="text-gray-700 mb-0">
-                    Producing a single EV battery can emit 150–200 kg of CO₂ per
-                    kilowatt-hour. While EVs reduce tailpipe emissions, the high
-                    carbon footprint of battery manufacturing —mainly due to
-                    energy use and material extraction —must be addressed to
-                    ensure a truly sustainable transition.
+                    Producing a single <strong>EV battery</strong> can emit{" "}
+                    <strong>150–200 kg of CO₂ per kilowatt-hour</strong>. While
+                    EVs reduce <strong>tailpipe emissions</strong>, the{" "}
+                    <strong>
+                      high carbon footprint of battery manufacturing
+                    </strong>{" "}
+                    — mainly due to <strong>energy use</strong> and{" "}
+                    <strong>material extraction</strong> — must be addressed to
+                    ensure a truly <strong>sustainable transition</strong>.
                   </p>
                 </div>
+
                 <div className="space-y-6">
                   <h3 className="text-xl font-semibold mt-4">
                     Environmental Footprint of Manufacturing
@@ -102,7 +107,7 @@ const ResearchSummary: React.FC = () => {
                           className="aspect-video overflow-hidden rounded-lg shadow-sm"
                         >
                           <img
-                            src={`${import.meta.env.BASE_URL}photos/${src}`}
+                            src={`${import.meta.env.BASE_URL}photos/p/${src}`}
                             alt={`Photo ${index + 1}`}
                             className="w-full h-full object-cover"
                           />
@@ -284,13 +289,16 @@ const ResearchSummary: React.FC = () => {
               Key Insight: Carbon Cost of Battery Production
             </h4>
             <p className="text-gray-700 mb-0">
-              Producing a single EV battery can emit 150–200 kg of CO₂ per
-              kilowatt-hour. While EVs reduce tailpipe emissions, the high
-              carbon footprint of battery manufacturing —mainly due to energy
-              use and material extraction —must be addressed to ensure a truly
-              sustainable transition.
+              Producing a single <strong>EV battery</strong> can emit{" "}
+              <strong>150–200 kg of CO₂ per kilowatt-hour</strong>. While EVs
+              reduce <strong>tailpipe emissions</strong>, the{" "}
+              <strong>high carbon footprint of battery manufacturing</strong> —
+              mainly due to <strong>energy use</strong> and{" "}
+              <strong>material extraction</strong> — must be addressed to ensure
+              a truly <strong>sustainable transition</strong>.
             </p>
           </div>
+
           <div className="space-y-6">
             <h3 className="text-xl font-semibold mt-4">
               Environmental Footprint of Manufacturing
@@ -321,7 +329,7 @@ const ResearchSummary: React.FC = () => {
                 className="aspect-video overflow-hidden rounded-lg shadow-sm"
               >
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/${src}`}
+                  src={`${import.meta.env.BASE_URL}photos/p/${src}`}
                   alt={`Photo ${index + 1}`}
                   className="w-full h-full object-cover"
                 />

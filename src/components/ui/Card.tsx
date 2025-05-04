@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 interface CardProps {
   title: string;
@@ -17,22 +17,19 @@ const Card: React.FC<CardProps> = ({
   icon,
   to,
   href,
-  className = '',
+  className = "",
   onClick,
 }) => {
   const cardContent = (
     <>
-      {icon && (
-        <div className="mb-4 text-green-500">
-          {icon}
-        </div>
-      )}
+      {icon && <div className="mb-4 text-green-500">{icon}</div>}
       <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </>
   );
 
-  const baseClasses = "bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100";
+  const baseClasses =
+    "bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100";
 
   if (to) {
     return (
@@ -44,10 +41,10 @@ const Card: React.FC<CardProps> = ({
 
   if (href) {
     return (
-      <a 
-        href={href} 
+      <a
+        href={href}
         className={`${baseClasses} ${className}`}
-        target="_blank" 
+        target="_blank"
         rel="noopener noreferrer"
       >
         {cardContent}
@@ -56,8 +53,10 @@ const Card: React.FC<CardProps> = ({
   }
 
   return (
-    <div 
-      className={`${baseClasses} ${className} ${onClick ? 'cursor-pointer' : ''}`}
+    <div
+      className={`${baseClasses} ${className} ${
+        onClick ? "cursor-pointer" : ""
+      }`}
       onClick={onClick}
     >
       {cardContent}

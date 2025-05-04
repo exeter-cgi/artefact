@@ -1,32 +1,30 @@
-import React from 'react';
+import React from "react";
 
 interface SectionProps {
   children: React.ReactNode;
   className?: string;
   id?: string;
-  background?: 'white' | 'light' | 'green';
+  background?: "white" | "light" | "green";
 }
 
 const Section: React.FC<SectionProps> = ({
   children,
-  className = '',
+  className = "",
   id,
-  background = 'white',
+  background = "white",
 }) => {
   const backgroundClasses = {
-    white: 'bg-white',
-    light: 'bg-gray-50',
-    green: 'bg-green-50',
+    white: "bg-white",
+    light: "bg-gray-50",
+    green: "bg-green-50",
   };
 
   return (
-    <section 
+    <section
       id={id}
       className={`py-16 md:py-24 ${backgroundClasses[background]} ${className}`}
     >
-      <div className="container mx-auto px-4 md:px-8">
-        {children}
-      </div>
+      <div className="container mx-auto px-4 md:px-8">{children}</div>
     </section>
   );
 };

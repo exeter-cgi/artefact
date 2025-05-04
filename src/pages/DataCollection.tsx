@@ -22,10 +22,10 @@ const DataCollection: React.FC = () => {
       <div className="bg-gradient-to-r from-green-500 to-green-600 text-white">
         <div className="container mx-auto px-4 py-20 pt-32">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          The Green Illusion
+            The Green Illusion
           </h1>
           <p className="text-xl opacity-90 max-w-2xl">
-          Why People Think EVs Are Automatically 
+            Why People Think EVs Are Automatically
           </p>
         </div>
       </div>
@@ -104,9 +104,10 @@ const DataCollection: React.FC = () => {
                   Conclusion and Research Relevance
                 </h4>
                 <p className="text-gray-700 mb-0">
-                  These insights provide a useful framework for evaluating
-                  public perception, which we explored further through primary
-                  research.
+                  These <strong>insights</strong> provide a useful{" "}
+                  <strong>framework for evaluating public perception</strong>,
+                  which we explored further through{" "}
+                  <strong>primary research</strong>.
                 </p>
               </div>
             </div>
@@ -280,8 +281,7 @@ const DataCollection: React.FC = () => {
             },
             {
               src: "dp3.jpg",
-              caption:
-                "Research framework",
+              caption: "Research framework",
             },
             {
               src: "dp4.png",
@@ -292,7 +292,7 @@ const DataCollection: React.FC = () => {
             <div key={index} className="flex flex-col items-center">
               <div className="w-full aspect-[16/9] rounded-lg overflow-hidden shadow-md">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
+                  src={`${import.meta.env.BASE_URL}photos/dp/${photo.src}`}
                   alt={photo.caption}
                   className="w-full h-full object-cover"
                 />
@@ -507,16 +507,17 @@ const DataCollection: React.FC = () => {
           {[
             {
               src: "d1.jpg",
-              caption: "Do you believe electric cars are environmentally friendly?",
+              caption:
+                "Do you believe electric cars are environmentally friendly?",
             },
             {
               src: "d2.jpg",
-              caption: "What makes you believe that electric cars are eco-friendly?",
+              caption:
+                "What makes you believe that electric cars are eco-friendly?",
             },
             {
               src: "d3.jpg",
-              caption:
-                "Where do you mostly hear or read about electric cars?",
+              caption: "Where do you mostly hear or read about electric cars?",
             },
             {
               src: "d4.jpg",
@@ -525,15 +526,18 @@ const DataCollection: React.FC = () => {
             },
             {
               src: "d5.jpg",
-              caption: "Do you agree with this statement: Driving an electric vehicle would make me feel like I'm helping the planet.",
+              caption:
+                "Do you agree with this statement: Driving an electric vehicle would make me feel like I'm helping the planet.",
             },
             {
               src: "d6.jpg",
-              caption: "Have you ever felt like people expect you to make greener choices?",
+              caption:
+                "Have you ever felt like people expect you to make greener choices?",
             },
             {
               src: "d7.jpg",
-              caption: "If you learned that charging an EV with fossil-fuel electricity still pollutes, would that change your opinion of how eco-friendly they are?",
+              caption:
+                "If you learned that charging an EV with fossil-fuel electricity still pollutes, would that change your opinion of how eco-friendly they are?",
             },
             {
               src: "d8.png",
@@ -543,7 +547,7 @@ const DataCollection: React.FC = () => {
             <div key={index} className="flex flex-col items-center">
               <div className="w-full aspect-[16/9] rounded-lg overflow-hidden shadow-md">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/${photo.src}`}
+                  src={`${import.meta.env.BASE_URL}photos/d/${photo.src}`}
                   alt={photo.caption}
                   className="w-full h-full object-cover"
                 />
@@ -567,39 +571,40 @@ const DataCollection: React.FC = () => {
             </p>
             <h3 className="text-xl font-semibold mt-4">First</h3>
             <p>
-              Both sets of data confirm that the idea of eco-friendliness
-              is based more on perception than full environmental understanding.
-              In both academic literature and the survey results, the absence of
+              Both sets of data confirm that the idea of eco-friendliness is
+              based more on perception than full environmental understanding. In
+              both academic literature and the survey results, the absence of
               exhaust fumes and media messaging drive the belief that EVs are
               “green.” This demonstrates that visible and emotional cues are
               more influential than technical lifecycle data.
             </p>
             <h3 className="text-xl font-semibold mt-4">Second</h3>
             <p>
-              Both show that social and psychological factors play a
-              major role. The survey responses show that people feel good about
-              owning or supporting EVs because it aligns with their identity,
-              values, and sense of responsibility, even if they know little
-              about emissions from electricity or battery disposal.
+              Both show that social and psychological factors play a major role.
+              The survey responses show that people feel good about owning or
+              supporting EVs because it aligns with their identity, values, and
+              sense of responsibility, even if they know little about emissions
+              from electricity or battery disposal.
             </p>
             <h3 className="text-xl font-semibold mt-4">However</h3>
             <p>
-              The survey also introduced some important nuance that
-              goes beyond what the literature predicted. While most people still
-              assume EVs are eco-friendly, some participants challenged this
-              belief directly, using words like “propaganda,” “greenwashing,” or
+              The survey also introduced some important nuance that goes beyond
+              what the literature predicted. While most people still assume EVs
+              are eco-friendly, some participants challenged this belief
+              directly, using words like “propaganda,” “greenwashing,” or
               “lesser evil.” These responses show that a minority of the public
               is developing a more critical understanding, perhaps influenced by
               newer online discussions or environmental awareness campaigns.
             </p>
             <div className="my-8 p-6 bg-green-50 rounded-lg border border-green-100">
               <h4 className="text-xl font-semibold text-green-800 mb-2">
-                Shift in public perception
+                Shift in Public Perception
               </h4>
               <p className="text-gray-700 mb-0">
-                While the “EVs are automatically green” assumption still
-                dominates, a growing number of people are starting to question
-                the full picture.
+                While the{" "}
+                <strong>“EVs are automatically green” assumption</strong> still
+                dominates, a <strong>growing number of people</strong> are
+                starting to <strong>question the full picture</strong>.
               </p>
             </div>
           </div>
@@ -608,7 +613,7 @@ const DataCollection: React.FC = () => {
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 sticky top-24">
               <div className="w-full aspect-[4/5] rounded-lg overflow-hidden shadow-md">
                 <img
-                  src={`${import.meta.env.BASE_URL}photos/d9.png`} // Update this path to your image
+                  src={`${import.meta.env.BASE_URL}photos/d/d9.png`} // Update this path to your image
                   alt="Research Highlights Summary"
                   className="w-full h-full object-cover"
                 />

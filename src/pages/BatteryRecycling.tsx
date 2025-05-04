@@ -45,8 +45,8 @@ const BatteryRecycling: React.FC = () => {
                   minimizing environmental and industrial risks.
                 </p>
                 <h3 className="text-xl font-semibold mt-4">
-                Environmental and Safety Risks
-                  </h3>
+                  Environmental and Safety Risks
+                </h3>
                 <p>
                   Improper disposal of lithium-ion batteries poses major
                   environmental and safety hazards. If dumped in landfills, they
@@ -57,8 +57,8 @@ const BatteryRecycling: React.FC = () => {
                   and the environment.
                 </p>
                 <h3 className="text-xl font-semibold mt-4">
-                Benefits of Recycling
-                  </h3>
+                  Benefits of Recycling
+                </h3>
                 <p>
                   Recycling provides a sustainable solution. Through recycling,
                   valuable metals such as cobalt, lithium, nickel, and manganese
@@ -78,8 +78,8 @@ const BatteryRecycling: React.FC = () => {
                   offering higher recovery rates and lower energy consumption.
                 </p>
                 <h3 className="text-xl font-semibold mt-4">
-                Technological Innovations
-                  </h3>
+                  Technological Innovations
+                </h3>
                 <p>
                   Exciting technological advancements are improving recycling
                   outcomes. Closed-loop recycling — where recovered materials
@@ -98,8 +98,8 @@ const BatteryRecycling: React.FC = () => {
                   facilities.
                 </p>
                 <h3 className="text-xl font-semibold mt-4">
-                Moving Forward: Regulation and Responsibility
-                  </h3>
+                  Moving Forward: Regulation and Responsibility
+                </h3>
                 <p>
                   To tackle these challenges, stronger government regulations,
                   economic incentives, and public education efforts are urgently
@@ -115,12 +115,15 @@ const BatteryRecycling: React.FC = () => {
                   Key Note
                 </h4>
                 <p className="text-gray-700 mb-0">
-                  Today, the vast majority of lithium-ion batteries are not
-                  recycled, posing a serious environmental challenge. Estimates
-                  show that only 5–10% of used batteries are properly recycled
-                  worldwide. A key obstacle to broader recycling efforts remains
-                  the low economic viability compared to sourcing new raw
-                  materials.
+                  Today, the{" "}
+                  <strong>vast majority of lithium-ion batteries</strong> are{" "}
+                  <strong>not recycled</strong>, posing a serious{" "}
+                  <strong>environmental challenge</strong>. Estimates show that
+                  only <strong>5–10%</strong> of used batteries are properly
+                  recycled <strong>worldwide</strong>. A key obstacle to broader
+                  recycling efforts remains the{" "}
+                  <strong>low economic viability</strong> compared to sourcing{" "}
+                  <strong>new raw materials</strong>.
                 </p>
               </div>
 
@@ -139,7 +142,9 @@ const BatteryRecycling: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 sticky top-24">
               {/* Sources */}
-              <h3 className="text-xl font-semibold mb-4">Recycling and Disposal Summary</h3>
+              <h3 className="text-xl font-semibold mb-4">
+                Recycling and Disposal Summary
+              </h3>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3">
@@ -328,7 +333,7 @@ const BatteryRecycling: React.FC = () => {
               className="aspect-video bg-gray-200 rounded-lg overflow-hidden"
             >
               <img
-                src={`${import.meta.env.BASE_URL}photos/${src}`}
+                src={`${import.meta.env.BASE_URL}photos/e/${src}`}
                 alt={`Experiment Photo ${index + 1}`}
                 className="w-full h-full object-cover"
               />

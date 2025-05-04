@@ -35,27 +35,27 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/production" className="hover:text-green-500">
-                Battery Production Impact
+                  Battery Production Impact
                 </Link>
               </li>
               <li>
                 <Link to="/lifespan" className="hover:text-green-500">
-                Battery Lifespan in EVs
+                  Battery Lifespan in EVs
                 </Link>
               </li>
               <li>
                 <Link to="/recycling" className="hover:text-green-500">
-                Battery Recycling and Disposal
+                  Battery Recycling and Disposal
                 </Link>
               </li>
               <li>
-                <Link to="/battery-production" className="hover:text-green-500">
-                Analysis & Results
+                <Link to="/analysis" className="hover:text-green-500">
+                  Analysis & Results
                 </Link>
               </li>
               <li>
-                <Link to="/life-cycle" className="hover:text-green-500">
-                Take the Quiz
+                <Link to="/quiz" className="hover:text-green-500">
+                  Take the Quiz
                 </Link>
               </li>
             </ul>

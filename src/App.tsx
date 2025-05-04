@@ -5,7 +5,7 @@ import DataCollection from './pages/DataCollection';
 import BatteryProduction from './pages/BatteryProduction';
 import BatteryRecycling from './pages/BatteryRecycling';
 import BatteryLifespan from './pages/BatteryLifespan'
-import VideoPage from './pages/VideoPage';
+import Analysis from './pages/Analysis';
 import Quiz from './pages/Quiz';
 import ScrollReset from './components/ScrollReset';
 
@@ -24,7 +24,7 @@ function App() {
             <Route path="/data" element={<DataCollection />} />
             <Route path="/lifespan" element={<BatteryLifespan />} />
             <Route path="/recycling" element={<BatteryRecycling />} />
-            <Route path="/video" element={<VideoPage />} />
+            <Route path="/analysis" element={<Analysis />} />
             <Route path="/quiz" element={<Quiz />} />
 
             {/* Optional redirect example */}

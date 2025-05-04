@@ -1,17 +1,17 @@
-import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const BackToHomeButton: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const isHomePage = location.pathname === '/';
+  const isHomePage = location.pathname === "/";
 
   if (isHomePage) return null;
 
   const handleGoBack = () => {
-    navigate(-1); 
+    navigate(-1);
   };
 
   return (
