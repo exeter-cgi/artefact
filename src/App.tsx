@@ -1,26 +1,30 @@
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
-import Home from './pages/Home';
-import DataCollection from './pages/DataCollection';
-import BatteryProduction from './pages/BatteryProduction';
-import BatteryRecycling from './pages/BatteryRecycling';
-import BatteryLifespan from './pages/BatteryLifespan'
-import Analysis from './pages/Analysis';
-import Quiz from './pages/Quiz';
-import ScrollReset from './components/ScrollReset';
-
+import Home from "./pages/Home";
+import DataCollection from "./pages/DataCollection";
+import BatteryProduction from "./pages/BatteryProduction";
+import BatteryRecycling from "./pages/BatteryRecycling";
+import BatteryLifespan from "./pages/BatteryLifespan";
+import Analysis from "./pages/Analysis";
+import Quiz from "./pages/Quiz";
+import ScrollReset from "./components/ScrollReset";
 
 function App() {
   return (
     <Router>
-      {/* 👇 Force page to top on route change, no scroll animation */}
+      {/* Force page to top on route change, no scroll animation */}
       <ScrollReset />
 
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/production" element={<BatteryProduction/>} />
+            <Route path="/production" element={<BatteryProduction />} />
             <Route path="/data" element={<DataCollection />} />
             <Route path="/lifespan" element={<BatteryLifespan />} />
             <Route path="/recycling" element={<BatteryRecycling />} />
