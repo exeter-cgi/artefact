@@ -810,7 +810,7 @@ const Home: React.FC = () => {
                 alt="Member 4"
                 className="rounded-lg w-full h-64 object-cover mb-4"
               />
-              <h3 className="text-lg font-semibold">Hazem Bail</h3>
+              <h3 className="text-lg font-semibold">Hazem Baik</h3>
               <p className="text-gray-500 text-sm">
                 Research Analysis & Writing
               </p>
