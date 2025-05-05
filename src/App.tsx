@@ -14,6 +14,7 @@ import Analysis from "./pages/Analysis";
 import Quiz from "./pages/Quiz";
 import ScrollReset from "./components/ScrollReset";
 
+
 function App() {
   return (
     <Router>
