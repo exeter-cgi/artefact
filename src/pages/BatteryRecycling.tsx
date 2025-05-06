@@ -296,7 +296,7 @@ const BatteryRecycling: React.FC = () => {
                     </li>
                     <li>
                       <a
-                        href="https://doi.org/10.1039/D1RA00017F"
+                        href="https://doi.org/10.1039/D0RA09297E"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:underline hover:text-blue-600 text-gray-600"
